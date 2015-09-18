@@ -1,0 +1,24 @@
+apply plugin: 'java'
+apply plugin: 'com.novoda.bintray-release'
+
+sourceCompatibility = 1.7
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.sloydev:jsonadapters-core:0.1.0'
+}
+
+
+publish {
+    userOrg = 'sloy'
+    groupId = 'com.sloydev'
+    artifactId = 'okresponsefaker'
+    version = '1.0.0-SNAPSHOT'
+    description = 'OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp through interceptors.'
+    website = 'https://github.com/Sloy/okresponsefaker'
+}
+
