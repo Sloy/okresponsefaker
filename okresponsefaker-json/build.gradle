@@ -8,16 +8,15 @@ repositories {
 }
 
 dependencies {
-    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile project(':okresponsefaker')
+    compile 'com.sloydev:jsonadapters-core:0.1.0'
 }
-
 
 publish {
     userOrg = 'sloy'
     groupId = 'com.sloydev'
-    artifactId = 'okresponsefaker'
+    artifactId = 'okresponsefaker-json'
     version = '1.0.0-SNAPSHOT'
-    description = 'OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp through interceptors.'
+    description = 'OkHttp response faker, JSON module. Fake JSON responses using objects thanks to JsonAdapters'
     website = 'https://github.com/Sloy/okresponsefaker'
 }
-
