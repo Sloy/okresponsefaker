@@ -16,7 +16,7 @@ publish {
     userOrg = 'sloy'
     groupId = 'com.sloydev'
     artifactId = 'okresponsefaker-json'
-    version = '1.0.0-SNAPSHOT'
+    version = '1.0.0'
     description = 'OkHttp response faker, JSON module. Fake JSON responses using objects thanks to JsonAdapters'
     website = 'https://github.com/Sloy/okresponsefaker'
 }

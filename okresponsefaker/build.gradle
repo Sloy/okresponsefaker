@@ -16,7 +16,7 @@ publish {
     userOrg = 'sloy'
     groupId = 'com.sloydev'
     artifactId = 'okresponsefaker'
-    version = '1.0.0-SNAPSHOT'
+    version = '1.0.0'
     description = 'OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp through interceptors.'
     website = 'https://github.com/Sloy/okresponsefaker'
 }
