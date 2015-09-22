@@ -29,7 +29,7 @@ dependencies {
 You just need to add a **FakeResponseInterceptor** to the end of interceptors chain when creating your OkHttp client.
 There are two easy of using OkResponseFaker: singleton or custom instance. Check the diferences in the usage section.
 ```java
-public void OkHttpClient createClient(){
+public OkHttpClient createClient(){
   OkHttpClient client = new OkHttpClient();
   client.interceptors().add(...);
   client.interceptors().add(ResponseFaker.interceptor()); // singleton way
