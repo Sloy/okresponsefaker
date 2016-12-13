@@ -1,9 +1,10 @@
 package com.sloydev.okresponsefaker;
 
-import com.squareup.okhttp.Interceptor;
-import com.squareup.okhttp.MediaType;
-import com.squareup.okhttp.Response;
-import com.squareup.okhttp.ResponseBody;
+import okhttp3.Interceptor;
+import okhttp3.MediaType;
+import okhttp3.Response;
+import okhttp3.ResponseBody;
+
 import java.io.IOException;
 
 public class FakeResponseInterceptor implements Interceptor {

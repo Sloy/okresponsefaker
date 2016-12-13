@@ -1,5 +1,5 @@
 # OkResponseFaker
-OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp through interceptors.
+OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp3 through interceptors.
 
 # Description
 OkResponseFaker uses a special OkHttp Interceptor that allows you to provide a custom response for the next or more requests executed, allowing you to easily debug feedback to special cases in your application.
@@ -9,17 +9,17 @@ You can fake response status and body using the *FakeResponse* interface. Use si
 Just import the library from jcenter:
 ```groovy
 dependencies {
-    compile 'com.sloydev:okresponsefaker:1.0.0'
-    compile 'com.squareup.okhttp:okhttp:2.5.0' // requires OkHttp 2.2 or better
+    compile 'com.sloydev:okresponsefaker:2.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1' // requires OkHttp 3
 }
 ```
 
 You can add the optional JSON module if you want to build `JsonFakeResponse` using [JsonAdapters](https://github.com/Sloy/JsonAdapters):
 ```groovy
 dependencies {
-    compile 'com.sloydev:okresponsefaker:1.0.0'
-    compile 'com.sloydev:okresponsefaker-json:1.0.0'
-    compile 'com.squareup.okhttp:okhttp:2.5.0' // requires OkHttp 2.2 or better
+    compile 'com.sloydev:okresponsefaker:2.0.0'
+    compile 'com.sloydev:okresponsefaker-json:2.0.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1' // requires OkHttp 3
     compile 'com.sloydev:jsonadapters-core:0.1.0' // included in okresponsefaker-json, but whatever
     // ...
 }

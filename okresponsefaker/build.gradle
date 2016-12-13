@@ -8,7 +8,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.squareup.okhttp:okhttp:2.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
 }
 
 
@@ -16,7 +16,7 @@ publish {
     userOrg = 'sloy'
     groupId = 'com.sloydev'
     artifactId = 'okresponsefaker'
-    version = '1.0.0'
+    version = '2.0.0'
     description = 'OkHttp response faker. Provide "fire and forget" or persistent fake responses to OkHttp through interceptors.'
     website = 'https://github.com/Sloy/okresponsefaker'
 }
